@@ -1,0 +1,55 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  darkMode: "class",
+  content: [
+    "./app/**/*.{js,jsx,ts,tsx}",
+    "./components/**/*.{js,jsx,ts,tsx}",
+  ],
+  presets: [require("nativewind/preset")],
+  theme: {
+    extend: {
+      colors: {
+        // Tokens espelhados de domus-frontend/src/index.css
+        financial: {
+          success: "#10b981",
+          successLight: "#ecfdf5",
+          successDark: "#34d399",
+          successLightDark: "#064e3b",
+          danger: "#ef4444",
+          dangerLight: "#fee2e2",
+          dangerDark: "#f87171",
+          dangerLightDark: "#450a0a",
+          investment: "#f59e0b",
+          investmentLight: "#fffbeb",
+          investmentDark: "#fbbf24",
+          investmentLightDark: "#451a03",
+          trust: "#3b82f6",
+          trustLight: "#dbeafe",
+          trustDark: "#60a5fa",
+          trustLightDark: "#172554",
+          income: "#10b981",
+          incomeLight: "#ecfdf5",
+          incomeDark: "#34d399",
+          incomeLightDark: "#064e3b",
+        },
+        card: "#ffffff",
+        cardDark: "#1e293b",
+        cardForeground: "#1e293b",
+        cardForegroundDark: "#e2e8f0",
+        border: "#e2e8f0",
+        borderDark: "#334155",
+        mutedForeground: "#64748b",
+        mutedForegroundDark: "#94a3b8",
+        chart: {
+          1: "#10b981",
+          "1Dark": "#34d399",
+          2: "#ef4444",
+          "2Dark": "#f87171",
+          3: "#f59e0b",
+          "3Dark": "#fbbf24",
+        },
+      },
+    },
+  },
+  plugins: [],
+};
